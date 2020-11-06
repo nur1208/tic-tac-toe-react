@@ -1,0 +1,94 @@
+:root {
+  --plus: 10;
+}
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 0;
+  background-color: rgb(49, 56, 71);
+}
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background-color: rgb(78, 109, 106);
+  border: 1px solid aqua;
+  float: left;
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 64px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 64px;
+  color: rgb(44, 180, 180);
+}
+.square:focus {
+  outline: none;
+}
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 50%;
+  width: 60%;
+  left: 40%;
+}
+.game-info {
+  margin-left: 20px;
+}
+
+.sort-btn-container {
+  position: absolute;
+  /* margin-left: 20px; */
+  top: 200px;
+}
+
+/* .game-status {
+  color: aqua;
+} */
+
+.game-info div,
+.move,
+.sort-btn {
+  color: aqua;
+}
+
+.move,
+.sort-btn {
+  padding: 5px 10px;
+  background-color: rgb(78, 109, 106);
+}
+
+.current-square {
+  font-weight: bold;
+  color: aqua;
+}
+
+.game-container {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
